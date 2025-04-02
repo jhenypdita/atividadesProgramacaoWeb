@@ -1,0 +1,152 @@
+<!--
+�
+ Trabalho Prático: Tributo a Um Ídolo
+ Neste trabalho prático, você será responsável por criar uma
+ página HTML dedicada a homenagear um ídolo ou figura de
+ destaque que você admire e que tenha tido uma influência
+ significativa em sua vida ou carreira. A página deverá ser bem
+ estruturada, com o uso correto de diversos elementos HTML,
+ como containers, tabelas, elementos de multimídia, elementos
+ de texto e formatação.
+ Conteúdo Da Página
+ A página deverá apresentar seu ídolo para o mundo! Para isso
+ ela deverá incluir pelo menos os seguintes elementos:
+ Título principal
+ Imagem de destaque do ídolo
+ Uma seção de introdução/apresentação do ídolo
+ Ficha de identificação do ídolo, contendo uma imagem de
+ perfil, nome completo, data e local de nascimento, etc.
+ Uma seção para descrever como foi a carreira do seu ídolo
+ Uma seção que destaque as principais conquistas e
+ realizações
+ Qualquer outra informação relevante que julgue pertinente
+ Uma fonte contendo links utilizados como referência para
+ construção da página
+ Requisitos De Estrutura
+Durante a implementação da sua página, você deverá estar
+ atento para cumprir os seguintes requisitos:
+ A imagem de destaque deverá ficar no cabeçalho da página
+ junto do título principal
+ Ficha de identificação deverá ficar no container 
+<aside>
+ As referências deverão ficar no rodapé da página, junto da
+ data de criação da página
+ As conquistas do ídolo deverão ser descritas em formato
+ tabular, contendo a conquista e o ano em que foi alcançada
+ As seções de apresentação, carreira, conquistas, e outras
+ informações deverão ficar na parte principal da página
+ Cada seção deverá vir obrigatoriamente em um
+ container próprio, e deve apresentar obrigatoriamente
+ um subtítulo para cada
+ Utilizar elementos de formatação como negrito e itálico
+ pelo menos 6 vezes
+ Utilizar elementos de lista pelo menos duas vezes 
+ --->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tributo a Seu Jorge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        aside {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tributo a Seu Jorge</h1>
+        <img src="./seujorge.jpg" alt="Seu Jorge" width="300">
+    </header>
+    <main>
+        <section>
+            <h2>Quem é Seu Jorge?</h2>
+            <p><strong>Jorge Mário da Silva</strong> conhecido pelo nome artístico de Seu Jorge, é ator, cantor, compositor e instrumentista brasileiro de MPB, R&B, samba e soul. Teve uma infância díficil, começou a trabalhar aos 10 anos de idade em uma borracharia, primeiras de muitas ocupações como office-boy, descascador de batatas em um bar e marceneiro. Serviu ao exercito brasileiro no Rio de Janeiro de 1989 a 1990, fez curso de corneteiro militar, mas não se adaptou e acabou sendo expulso em janeiro de 1990.</p>
+            <p>As várias profissões, nunca ofuscaram seu verdadeiro desejo pela música. Desde adolescente, frequentava as rodas de samba cariocas, acompanhava o pai e os irmãos aos bailes funks e bailes charmes das favelas. Logo começou a cantar na noite. Em 1990, seu irmão Vitório morreu em uma chacina, a família desistruturou e <strong>Seu Jorge</strong>, virou um sem-teto por quase três anos. A virada se deu, quando <strong>Seu Jorge</strong> foi convidado a participar do Espetáculo <em>A Saga da farinha</em>, participou de mais de 20 espetáculos como cantor e ator. Em 1997 passou a integrar a banda <strong>Farofa Carioca</strong>. Além da carreira musical, Seu Jorge é um dos donos da cervejaria Karavelle e de dois bares na cidade de São Paulo.</p>
+            <p><strong>Seu Jorge</strong> é pai de 4 filhos, Luz, Flor, Aimeé e Samba, é primo do cantor <em>Dudu Nobre</em>. Atualmente, mora nos <em>Estados Unidos</em> com sua esposa e filhos.</p>
+        </section>
+        <aside>
+            <h2>Ficha de Identificação</h2>
+            <img src="./seujorgeperfil.jpg" alt="Imagem de perfil do Seu Jorge" width="150">
+            <p><strong>Nome completo:</strong> Jorge Mário da Silva</p>
+            <p><strong>Data de nascimento:</strong> 8 de junho de 1970</p>
+            <p><strong>Local de nascimento:</strong> Rio de Janeiro, Brasil</p>
+        </aside>
+        <section>
+            <h2>A Carreira de Seu Jorge</h2>
+            <p><strong>Seu Jorge</strong> começou sua carreira na década de 90 e rapidamente se destacou por sua voz marcante e composições que conquistaram o público nacional e internacional. Participou da formação da banda Farofa Carioca, que lançou seu primeiro CD em 1998 com uma mistura dos ritmos negros de várias partes do mundo, como samba, reggae, jongo, funk e rap. A partir daí, Seu Jorge teve sua carreira engrenada e passou a participar de vários projetos, como um disco de tributo a Tim Maia e a participação em estúdio, bem como a turnê da banda brasileira Planet Hemp, em 2000.</p>
+            <p>Participou também em diversos filmes em sua carreira, como Cidade de Deus, The Life Aquatic with Steve Zissou, Tropa de Elite 2: O Inimigo Agora É Outro, The Escapist, E Aí... Comeu?, Marighela, Medida Provisória, entre outros.</p>
+            <p>Em janeiro de 2013, <strong>Seu Jorge</strong> decidiu mudar-se junto com sua família para Los Angeles com o intuito de se dedicar mais à carreira de ator. Onde mora até os dias de hoje</p>
+        </section>
+        <section>
+            <h2>Principais Conquistas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Conquista</th>
+                        <th>Ano</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lançamento de "Carolina"</td>
+                        <td>2002</td>
+                    </tr>
+                    <tr>
+                        <td>Atuação no filme "The Life Aquatic"</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Premio de Melhor Ator no filme "Marighela"</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Premio de Melhor Ator Nacional no Filme "Medida Provisória" </td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Curiosidades</h2>
+            <ul>
+                <li><strong>Seu Jorge</strong> colaborou com diversos artistas internacionais.</li>
+                <li>Ele é conhecido por suas interpretações únicas de clássicos da música.</li>
+                <li>Em 2007, aderiu ao efêmero Movimento Cívico pelo Direito dos Brasileiros mais conhecido como <em>Cansei</em>, de oposição ao governo Lula, liderado pelo empresário, na época futuro prefeito e governador de São Paulo, <strong>João Dória</strong>. Na ocasião, Seu Jorge declarou: <em>O Brasil não me deu nada, não. Pelo Brasil, eu tava na cadeia, no subemprego, sacou?</em></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><em>Referências:</em></p>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Seu_Jorge">Seu Jorge - Wikipedia</a></li>
+        </ul>
+        <p><em>Página criada em 01/04/2025</em></p>
+    </footer>
+</body>
+</html>
