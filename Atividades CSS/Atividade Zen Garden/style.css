@@ -1,0 +1,12 @@
+/* Color Theme Swatches in Hex */
+/*.secundário { color: #68C5F; }
+.principal { color: #898C3A; }
+.background { color: #F2E0D5; }
+.Ilustração-4-hex { color: #F2622E; }
+.Ilustração-5-hex { color: #8C4E37; }
+*/
+ 
+html{
+    background:#F2E0D5 ;
+    color:#468C5F ;
+} 
