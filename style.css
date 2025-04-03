@@ -1,29 +1,12 @@
-/*
-1. Analise o código CSS abaixo e calcule em pixels o tamanho da fonte dos elementos.
-  a. h1 
-  b. principal 
-  c. secundário
+/* Color Theme Swatches in Hex */
+/*.secundário { color: #68C5F; }
+.principal { color: #898C3A; }
+.background { color: #F2E0D5; }
+.Ilustração-4-hex { color: #F2622E; }
+.Ilustração-5-hex { color: #8C4E37; }
 */
-html { font-size: 20px; } 
-
-html h1 { font-size: 2rem; } /* 20 * 2 = 40px */
-
-h1 > .principal { font-size: 1.4em; } /* 1.4 * 40 = 56px */
-
-html .secundario { font-size: 1.4rem; } /* 1.4 * 20 = 28 px */
-
-/*
-2. Dada a cor definida no formato RGBrgb(219, 78, 68) , calcule duas possíveis variações, uma 15% mais clara, outra 15% mais escura. Coloque as cores lado-a-lado e compare os resultados.
-*/
- .cor { 
-    color: rgb(219,78,68);
-}
-
- .cor-clara {
-     color: rgb(252, 90, 78);
-}
-
-.cor-escura {
-    color: rgb(186, 66, 58);
-}
-
+ 
+html{
+    background:#F2E0D5 ;
+    color:#468C5F ;
+} 
