@@ -1,0 +1,91 @@
+/* 1. Vamos definir algumas diretivas gerais para nossa página.
+- Defina a largura geral da página em 80%, limitado a no máximo 1280px de largura.
+Centralize a página na tela.
+- Defina a altura da seção de introdução em 550px
+- Remova o container #design-archives da renderização da página.
+2. Agora vamos incrementar o cabeçalho da página.
+- Inverta a cor do cabeçalho aplicando o fundo escuro e a fonte clara.
+- Coloque título e subtítulo lado-a-lado, mas mantendo espaçamento entre eles e o
+restante da página.
+- Adicione um espaçamento lateral de 1em para o título principal.
+3. É hora de incrementar os menus!
+- Remova os bullets dos itens de menu presentes no painel lateral.
+- Aumente o espaçamento entre os itens do menu para 1em, pelo menos.
+- Centralize os itens presentes em cada menu.
+4. Por fim, vamos aplicar uma inversão de cores no rodapé para ele ganhar um contraste
+em relação ao restante da página.
+- Adicione 4% de espaçamento externo no rodapé.
+- Transforme cada link do rodapé em uma caixa colocando borda sólida de 2px, e
+espaçamento interno de 0.5em.*/
+
+
+.main footer {
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #468C5F;
+    padding: 0.5em;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+.page-wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+#zen-intro {
+    height: 550px;
+}
+
+#design-archives{
+    display: none;
+}
+
+#zen-intro header {
+    background-color:#468C5F ;
+    color:#F2E0D5 ;
+}
+
+#zen-intro header h1, #zen-intro header h2 {
+    display: inline-block;
+}
+
+#zen-intro header h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+html{
+    background:#F2E0D5 ;
+    color:#468C5F ;
+
+    font-size: 18px;
+    font-family:  Helvetica, sans-serif;
+} 
+
+p { 
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1{font-size: 1.8rem;}
+h2{font-size: 1.4rem;}
+h3{font-size: 1.2rem;}
+
+.summary {text-align: center;}
+.main p {line-height: 1.5;}
+abbr{font-variant: small-caps;}
